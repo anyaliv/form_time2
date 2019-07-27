@@ -1,25 +1,297 @@
+<!DOCTYPE HTML>
+<!--
+	Intensify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+
 <html>
+
 <head>
-    <title>Test</title>
-    <script type="text/javascript">
-        // Called on form's `onsubmit`
-        function tosubmit() {
-            // Getting the value of your text input
-            var mytext = document.getElementById("mytext").value;
-            // Storing the value above into localStorage
-            localStorage.setItem("mytext", mytext);
-            return true;
-        }
-    </script> 
+	<title>Intensify by TEMPLATED</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
+
 <body>
-    <center>   
-        <!-- INLCUDING `ONSUBMIT` EVENT + ACTION URL --> 
-        <form name="myform" onsubmit="tosubmit();" action="confirm.html">
 
-            <input  id="mytext" type="text" name="data">
-            <input type="submit" value="Submit">
+	<!-- Header -->
+	<header id="header">
+		<nav class="left">
 
-        </form>
+		</nav>
+		<a href="index.html" class="logo">Anya Form time!</a>
+		<nav class="right">
+			<!--a href="#" class="button alt"></a-->
+		</nav>
+	</header>
+
+	<!-- Banner -->
+	<section id="banner">
+		<div class="content">
+			<h1>Ah yes...</h1>
+			<p>Sometimes, when you have had a hard day, all you want to do is fill out registration forms.<br /> What
+				are you registering for? Who knows. Who cares, even. <br /> All you want to do is just fill out those
+				rectangular boxes, and frankly, who can blame you?</p>
+			<ul class="actions">
+				<li><a href="#one" class="button scrolly">Get Started</a></li>
+			</ul>
+		</div>
+	</section>
+
+
+	<!-- One -->
+	<section id="one" class="wrapper">
+		<div class="inner flex flex-3">
+			<div class="flex-item right">
+				<form>
+					<div class="form-group">
+
+						<form>
+
+							<div class="form-group">
+								<!-- First Name -->
+								<label for="first_name_id" class="control-label">First Name</label>
+								<input type="text" class="form-control" id="first_name_id" name="first_name"
+									placeholder="John" required>
+							</div>
+
+							<div class="form-group">
+								<!-- Last Name -->
+								<label for="last_name_id" class="control-label">Last Name</label>
+								<input type="text" class="form-control" id="last_name_id" name="last_name"
+									placeholder="Smith" required>
+								
+							</div>
+
+							<div class="form-group">
+								<!-- Street 1 -->
+								<label for="street1_id" class="control-label">Street Address</label>
+								<input type="text" class="form-control" id="street1_id" name="street1"
+									placeholder="Street address" required>
+
+									<div class="invalid-feedback">
+											Please provide a valid address.
+									  </div>
+							</div>
+
+
+							<div class="form-group">
+								<!-- City-->
+								<label for="city_id" class="control-label">City</label>
+								<input type="text" class="form-control" id="city_id" name="city"
+									placeholder="City" required>
+									
+     							 <div class="invalid-feedback">
+       								 Please provide a valid city.
+      							</div>
+      									
+							</div>
+
+							<div class="form-group">
+								<!-- State Button -->
+								<label for="state_id" class="control-label">State</label>
+									<form action="/action_page.php">
+										<input list="states" name="state" placeholder="State" required>
+										<datalist id="states">
+											<option value="AL">Alabama</option>
+											<option value="AK">Arkansas</option>
+											<option value="AZ">Arizona</option>
+											<option value="AR">Arkansas</option>
+											<option value="CA">California</option>
+											<option value="CO">Colorado</option>
+											<option value="CT">Connecticut</option>
+											<option value="DE">Delaware</option>
+											<option value="DC">District Of Columbia</option>
+											<option value="FL">Florida</option>
+											<option value="GA">Georgia</option>
+											<option value="HI">Hawaii</option>
+											<option value="ID">Idaho</option>
+											<option value="IL">Illinois</option>
+											<option value="IN">Indiana</option>
+											<option value="IA">Iowa</option>
+											<option value="KS">Kansas</option>
+											<option value="KY">Kentucky</option>
+											<option value="LA">Louisiana</option>
+											<option value="ME">Maine</option>
+											<option value="MD">Maryland</option>
+											<option value="MA">Massachusetts</option>
+											<option value="MI">Michigan</option>
+											<option value="MN">Minnesota</option>
+											<option value="MS">Mississippi</option>
+											<option value="MO">Missouri</option>
+											<option value="MT">Montana</option>
+											<option value="NE">Nebraska</option>
+											<option value="NV">Nevada</option>
+											<option value="NH">New Hampshire</option>
+											<option value="NJ">New Jersey</option>
+											<option value="NM">New Mexico</option>
+											<option value="NY">New York</option>
+											<option value="NC">North Carolina</option>
+											<option value="ND">North Dakota</option>
+											<option value="OH">Ohio</option>
+											<option value="OK">Oklahoma</option>
+											<option value="OR">Oregon</option>
+											<option value="PA">Pennsylvania</option>
+											<option value="RI">Rhode Island</option>
+											<option value="SC">South Carolina</option>
+											<option value="SD">South Dakota</option>
+											<option value="TN">Tennessee</option>
+											<option value="TX">Texas</option>
+											<option value="UT">Utah</option>
+											<option value="VT">Vermont</option>
+											<option value="VA">Virginia</option>
+											<option value="WA">Washington</option>
+											<option value="WV">West Virginia</option>
+											<option value="WI">Wisconsin</option>
+											<option value="WY">Wyoming</option>
+										</datalist>
+
+
+										<div class="form-group">
+											<!-- Zip Code-->
+														<label for="validationCustom05">Zip</label>
+														<input type="text" class="form-control" id="validationCustom05" placeholder="Zip" required>
+														<div class="invalid-feedback">
+														  Please provide a valid zip.
+														</div>
+													  </div>
+										</div>
+
+
+										<div class="form-group">
+										<label for="exampleInputEmail1">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail1"
+											aria-describedby="emailHelp" placeholder="Enter email">
+										<small id="emailHelp" class="form-text text-muted">Your email is safe with
+											us.</small>
+										</div>
+
+
+										<div class="form-group">
+												<label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+												<div class="col-10">
+												  <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input" required>
+												</div>
+											  </div>
+
+										<div class= "form-group">
+											<label for="exampleEducationlevel">Education Level</label>
+												<form action="/action_page.php">
+													<input list="Education Level" name="education" placeholder="Education">
+													<datalist id="Education Level">
+													  <option value="High School">
+													  <option value="Undergraduate">
+													  <option value="Graduate">
+													  <option value="Ph.D">
+													  </datalist>
+												  </form>
+										</div>
+
+										<div class= "form-group">
+												<label for="exampleIncome">Income</label>
+													<form action="/action_page.php">
+														<input list="Income" name="Income" placeholder="Income">
+														<datalist id="Income">
+														  <option value="-$50,000">
+														  <option value="$50,000 - $100,000">
+														  <option value="$100,000 + ">
+						
+														  </datalist>
+													  </form>
+											</div>
+
+										<div class="form-group">
+												<div class="form-check">
+												  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+												  <label class="form-check-label" for="invalidCheck">
+													Agree to terms and conditions
+												  </label>
+												  <div class="invalid-feedback">
+													You must agree before submitting.
+												  </div>
+
+							</div>
+
+
+							<head>
+									<title>reCAPTCHA demo: Simple page</title>
+									<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+								</head>
+					
+								<body>
+									<form action="?" method="POST">
+										<div style="text-align: center;">
+											<div class="g-recaptcha" data-sitekey="6LeUy68UAAAAALK_3DPZYrlGWYsmhDoP9NF-A-sl"
+												style="display: inline-block;"></div>
+											<br />
+									</form>
+								</body>
+							</div>
+
+
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+
+				</form>
+			</div>
+	</section>
+
+	<!-- EXTRA AREA SECTION -->
+	<section id="three" class="wrapper">
+		<div class="inner flex flex-3">
+			<div class="content">
+
+				<head>
+					<title>Test</title>
+					<script type="text/javascript">
+						// Called on form's `onsubmit`
+						function tosubmit() {
+							// Getting the value of your text input
+							var mytext = document.getElementById("mytext").value;
+							// Storing the value above into localStorage
+							localStorage.setItem("mytext", mytext);
+							return true;
+						}
+					</script>
+				</head>
+
+				<body>
+					<center>
+						<!-- INLCUDING `ONSUBMIT` EVENT + ACTION URL -->
+						<form name="myform" onsubmit="tosubmit();" action="confirm.html">
+
+							<input id="mytext" type="text" name="data">
+							<input type="submit" value="Submit">
+
+						</form>
+				</body>
+			</div>
+	</section>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<h2>Questions? Comments? Concerns?</h2>
+			<ul class="actions">
+				<li><span class="icon fa-envelope"></span> <a href="#">anyalivshyts@gmail.com</a></li>
+
+			</ul>
+		</div>
+		<div class="copyright">
+			&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a
+				href="https://unsplash.com">Unsplash</a>.
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
